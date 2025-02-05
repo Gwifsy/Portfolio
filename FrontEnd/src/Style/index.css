@@ -1,0 +1,273 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    overflow: hidden;
+    /* border: 1px solid red; */
+}
+
+.bg-linear-gradient {
+    background: linear-gradient(243.4deg, rgba(141, 61, 175, 0.216) 43%, rgba(0, 174, 239, 0.216) 50%);
+    width: 100vw;
+    height: 100vh;
+
+}
+
+/* PAGES HOME */
+.bg-home {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+
+}
+
+/* NAVBAR */
+.header-home {
+    box-shadow: 6px 13px 78px 0px rgba(0, 0, 0, 0.66);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(90deg, rgba(126, 100, 158, 0.534) 0%, rgba(45, 35, 56, 0.555) 100%);
+    padding: 0.8rem;
+    border-bottom: 3px solid;
+    border-image-slice: 3;
+    border-image-source: linear-gradient(90deg, rgba(201, 237, 251, 0.75) 33%, rgba(205, 145, 219, 0.75) 67.5%);
+}
+
+.nav-logo {
+    display: flex;
+    margin-left: 120px;
+    width: 120px;
+    opacity: 0.9;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    margin-right: 60px;
+    gap: 50px;
+}
+
+.nav-link {
+    margin-top: 15px;
+    display: flex;
+    width: 100px;
+    height: auto;
+}
+
+.nav-link #test {
+    filter: contrast(1.5);
+    fill: url(#paint0_linear_25_6);
+}
+
+.nav-link:hover #test {
+    fill: url(#paint0_linear_25_7);
+    filter: contrast(1.2);
+}
+
+.nav-none {
+    display: none;
+}
+
+/* SECTION BODYHOME */
+
+.container-title-button-social-home {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1600px;
+    margin: 80px auto;
+}
+
+.container-social {
+    display: flex;
+    margin-bottom: 65px;
+    flex-direction: column;
+    gap: 36px;
+}
+
+.icon-social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 65px;
+    height: 59px;
+    background: linear-gradient(360deg, rgba(205, 145, 219, 0.61) 0%, rgba(41, 176, 250, 0.56) 100%);
+    border-radius: 50px;
+}
+
+.icon-twitter {
+    margin-top: 6px;
+}
+
+.icon-social:hover svg {
+    transform: scale(1.2);
+}
+
+.container-title-button-home {
+    text-align: center;
+    flex: 1;
+}
+
+.text-h1-home {
+    width: 100%;
+}
+
+.text-h2-home {
+    margin-top: 15px;
+    width: 100%;
+}
+
+.container-button-home {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    margin-top: 40px;
+    width: 100%;
+}
+
+.button-link-home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 220px;
+    height: 50px;
+    gap: 5px;
+    background: linear-gradient(90deg, rgba(86, 79, 156, 0.82) -16.97%, rgba(49, 150, 213, 0.83) 83.03%);
+    border: 1px solid rgba(227, 210, 238, 1);
+    border-radius: 29px;
+}
+
+.button-title-margin {
+    margin-top: 6px;
+    margin-left: 7px;
+}
+
+.button-project-title-margin {
+    margin-top: 10px;
+    margin-left: 7px;
+}
+
+/* FOOTER HOME */
+
+.footer-home {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: linear-gradient(180deg, rgba(191, 162, 200, 0.164) 3%, rgba(1, 1, 1, 0.51) 37%);
+    backdrop-filter: blur(27.899999618530273px);
+
+    margin-top: 135px;
+}
+
+.title-services {
+    display: flex;
+    background: linear-gradient(90deg, rgba(73, 222, 230, 0.623) 18.5%, rgba(205, 145, 219, 0.637) 77.5%);
+    justify-content: center;
+    color: white;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 34px;
+    font-weight: 700;
+}
+
+.container-services {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 210px;
+}
+
+.container-title-p {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 50px;
+    width: 50%;
+}
+
+.line-footer {
+    margin-top: 20px;
+}
+
+.title-h3-service {
+    font-family: "Rajdhani", sans-serif;
+    font-size: 26px;
+    font-weight: 700;
+    background: linear-gradient(90deg, #49DEE6 20.5%, #CD91DB 89%);
+    text-align: center;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+.span-service {
+    font-family: "Rajdhani", sans-serif;
+    font-style: italic;
+    font-size: 22px;
+    font-weight: 500;
+    background: linear-gradient(90deg, #49DEE6 20.5%, #CD91DB 89%);
+    text-align: center;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    display: flex;
+    width: 100%;
+    height: auto;
+}
+
+.container-chevron {
+    opacity: 0.8;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    height: auto;
+    position: fixed;
+    overflow: visible;
+    bottom: 40px;
+}
+
+.chevron-top,
+.chevron-bottom {
+    cursor: pointer;
+    display: flex;
+    transition: transform 0.2s ease;
+    background: linear-gradient(90deg, #49DEE6 20.5%, #CD91DB 89%);
+    width: 20px;
+    height: 40px;
+    border-radius: 5px;
+    rotate: 270deg;
+    border: 2px solid rgb(196, 235, 238);
+}
+
+.chevron-top:hover,
+.chevron-bottom:hover {
+    transform: scale(1.1);
+
+}
+
+.counter {
+    display: flex;
+    font-family: "Rajdhani", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(90deg, #49DEE6 20.5%, #CD91DB 89%);
+    font-size: 10px;
+    color: black;
+    height: 20px;
+    border-radius: 5px;
+    border: 2px solid rgb(196, 235, 238);
+    width: 40px;
+}

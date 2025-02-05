@@ -1,0 +1,11 @@
+<svg width="40" height="32" viewBox="0 0 40 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Archive Book">
+<path id="icon" d="M22.0833 18.6667H29.1667M15 24H29.1667M35 9.33335V22.6667C35 26.6667 32.5 29.3334 26.6667 29.3334H13.3333C7.5 29.3334 5 26.6667 5 22.6667V9.33335C5 5.33335 7.5 2.66669 13.3333 2.66669H26.6667C32.5 2.66669 35 5.33335 35 9.33335ZM25.8333 2.66669V13.1467C25.8333 13.7333 24.9666 14.0267 24.4333 13.64L20.5667 10.7867C20.25 10.5467 19.75 10.5467 19.4333 10.7867L15.5667 13.64C15.0334 14.0267 14.1667 13.7333 14.1667 13.1467V2.66669H25.8333Z" stroke="url(#paint0_linear_94_64)" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<defs>
+<linearGradient id="paint0_linear_94_64" x1="20" y1="2.66669" x2="20" y2="29.3334" gradientUnits="userSpaceOnUse">
+<stop offset="0.78" stop-color="#C7EBFA"/>
+<stop offset="1" stop-color="#2D5D92"/>
+</linearGradient>
+</defs>
+</svg>

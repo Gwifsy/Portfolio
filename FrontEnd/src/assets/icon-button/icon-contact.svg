@@ -1,0 +1,11 @@
+<svg width="41" height="35" viewBox="0 0 41 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Sms Tracking">
+<path id="icon" d="M3.41669 12.3959C3.41669 7.29169 6.83335 5.10419 11.9584 5.10419H29.0417C34.1667 5.10419 37.5834 7.29169 37.5834 12.3959V22.6042C37.5834 27.7084 34.1667 29.8959 29.0417 29.8959H11.9584M29.0417 13.125L23.6946 16.7709C21.935 17.9667 19.0479 17.9667 17.2883 16.7709L11.9584 13.125M3.41669 24.0625H13.6667M3.41669 18.2292H8.54169" stroke="url(#paint0_linear_94_43)" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<defs>
+<linearGradient id="paint0_linear_94_43" x1="20.5" y1="5.10419" x2="20.5" y2="29.8959" gradientUnits="userSpaceOnUse">
+<stop offset="0.9999" stop-color="#C7EBFA"/>
+<stop offset="1" stop-color="#4284C1"/>
+</linearGradient>
+</defs>
+</svg>
