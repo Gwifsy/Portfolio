@@ -1,0 +1,11 @@
+<svg width="40" height="37" viewBox="0 0 40 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Flex Align Right 01">
+<path id="Icon" d="M27.5 11.5625H12.5M27.5 16.7656H12.5M5 9.82812L5 27.1719C5 30.0455 7.5184 32.375 10.625 32.375L29.375 32.375C32.4816 32.375 35 30.0455 35 27.1719V9.82812C35 6.95452 32.4816 4.625 29.375 4.625H10.625C7.5184 4.625 5 6.95452 5 9.82812Z" stroke="url(#paint0_linear_120_538)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<defs>
+<linearGradient id="paint0_linear_120_538" x1="20" y1="4.625" x2="20" y2="32.375" gradientUnits="userSpaceOnUse">
+<stop stop-color="#C7EBFA"/>
+<stop offset="1" stop-color="#3C9DDB"/>
+</linearGradient>
+</defs>
+</svg>

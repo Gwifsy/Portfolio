@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { ReactComponent as ChevronTop } from "../assets/chevron-top.svg";
-import { ReactComponent as ChevronBottom } from "../assets/chevron-bottom.svg";
-import { ReactComponent as Line } from "../assets/line-footer.svg";
+import { ReactComponent as ChevronTop } from "@/assets/chevron-top.svg";
+import { ReactComponent as ChevronBottom } from "@/assets/chevron-bottom.svg";
+import { ReactComponent as Line } from "@/assets/line-footer.svg";
 
 const servicesLeft = [
     {
