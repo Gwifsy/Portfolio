@@ -1,5 +1,5 @@
 import Background from '@/assets/bg-pages/BG-ABOUT.webp';
-import BodyAbout from '@/Components/ComponentAbout/BodyAbout';
+import CenterContainerAbout from '@/Components/ComponentAbout/CenterContainer';
 import Nav from '../Components/Nav';
 
 
@@ -8,7 +8,7 @@ const About = () => {
         <div className='bg-linear-gradient'>
             <img className='bg-home' src={Background} alt="bg-about" />
             <Nav />
-            <BodyAbout />
+            <CenterContainerAbout />
         </div>
     );
 };

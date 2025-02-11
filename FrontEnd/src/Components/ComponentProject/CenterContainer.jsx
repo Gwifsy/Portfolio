@@ -37,7 +37,7 @@ const projectsData = [
 
 ];
 
-const BodyProject = () => {
+const CenterContainer = () => {
     const [selectedFilter, setSelectedFilter] = useState('all');
     const [filteredProjects, setFilteredProjects] = useState(projectsData);
     const [visibleProjects, setVisibleProjects] = useState(projectsData.slice(0, 4));
@@ -167,4 +167,4 @@ const BodyProject = () => {
     );
 };
 
-export default BodyProject;
+export default CenterContainer;

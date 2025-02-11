@@ -1,6 +1,6 @@
 import Background from '../assets/bg-pages/BG-HOME.webp'
 import Nav from '../Components/Nav'
-import BodyHome from '@/Components/ComponentHome/BodyHome'
+import CenterContainerHome from '@/Components/ComponentHome/CenterContainer'
 import FooterHome from '@/Components/ComponentHome/FooterHome'
 
 const Home = () => {
@@ -8,7 +8,7 @@ const Home = () => {
         <div className='bg-linear-gradient'>
             <img className='bg-home' src={Background} alt="bg-home" />
             <Nav />
-            <BodyHome />
+            <CenterContainerHome />
             <FooterHome />
         </div>
     );

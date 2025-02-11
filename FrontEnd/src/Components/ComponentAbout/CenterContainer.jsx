@@ -12,7 +12,7 @@ import { ReactComponent as ChevronRight } from '@/assets/icon-about/chevron-righ
 import { ReactComponent as AboutTitleMiddle } from '@/assets/nav-title/about.svg';
 import { ReactComponent as SkillsTitleMiddle } from '@/assets/nav-title/skills.svg';
 import T from "@/assets/bg-pages/BG-ABOUT.webp";
-const BodyAbout = () => {
+const CenterContainer = () => {
     const [activeCategory, setActiveCategory] = useState('about');
     const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -86,8 +86,7 @@ const BodyAbout = () => {
                 <Github />
             </div>
         </section>
-
     );
 }
 
-export default BodyAbout
+export default CenterContainer;
