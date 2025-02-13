@@ -1,0 +1,159 @@
+[
+    {
+      "id": 1,
+      "image": "/assets/Booki.webp",
+      "title": "Booki",
+      "description": "Création du site de locations immobilières Booki.",
+      "category": "Cas Clients",
+      "skills": ["/assets/skills/logo-html.webp", "/assets/skills/logo-css.webp", "/assets/skills/logo-github.webp"],
+      "steps": [
+        { "title": "Étape 1","ArrowDown":"arrow-down", "description": "Mettre en place l'environnement de développement." },
+        { "title": "Étape 2","ArrowDown":"arrow-down", "description": "Découpage de la maquette." },
+        { "title": "Étape 3","ArrowDown":"arrow-down", "description": "Intégration des différents éléments." },
+        { "title": "Étape 4","ArrowDown":"arrow-down", "description": "Mise en place du responsive design." },
+        { "title": "Étape 5","ArrowDown":"arrow-down", "description": "Vérification de la qualité du code." }
+      ],
+      "validations": [
+        { "validate": "1. Intégrer du contenu conformément à une maquette avec HTML et CSS.", "icon": "circle-check" },
+        { "validate": "2. Installer un environnement de développement front-end.", "icon": "circle-check" },
+        { "validate": "3. Implémenter une interface responsive avec HTML et CSS.", "icon": "circle-check" }
+      ]
+    },
+    {
+        "id": 2,
+        "image": "/assets/OhMyFood.webp",
+        "title": "Oh My Food",
+        "description": "Création du site type menu maker OhMyFood.",
+        "category": "Cas Clients",
+        "skills": ["/assets/skills/logo-html.webp", "/assets/skills/logo-css.webp", "/assets/skills/logo-sass.webp"],
+        "steps": [
+          { "title": "Étape 1","ArrowDown":"arrow-down", "description": "Mettre en place l'environnement de développement." },
+          { "title": "Étape 2","ArrowDown":"arrow-down", "description": "Intégrez la version mobile de la page d’accueil." },
+          { "title": "Étape 3","ArrowDown":"arrow-down", "description": "Ajoutez les animations à la page d’accueil." },
+          { "title": "Étape 4","ArrowDown":"arrow-down", "description": "Intégration des pages de restaurant et mise en place du responsive design." },
+          { "title": "Étape 5","ArrowDown":"arrow-down", "description": "Vérification de la qualité du code." }
+        ],
+        "validations": [
+          { "validate": "1. Intégrer une maquette en mobile-first", "icon": "circle-check" },
+          { "validate": "2. Versionner son projet avec Git et Github", "icon": "circle-check" },
+          { "validate": "3. Mettre en œuvre des animations CSS.", "icon": "circle-check" }
+        ]
+      },
+      {
+        "id": 3,
+        "image": "/assets/Sophie.webp",
+        "title": "Sophie Bluel",
+        "description": "Création du portfolio de l'architecte Sophie Bluel.",
+        "category": "Cas Clients",
+        "skills": ["/assets/skills/logo-sass.webp", "/assets/skills/logo-swagger.webp", "/assets/skills/logo-js.webp"],
+        "steps": [
+          { "title": "Étape 1","ArrowDown":"arrow-down", "description": "Description étape 1" },
+          { "title": "Étape 2","ArrowDown":"arrow-down", "description": "Description étape 2" },
+          { "title": "Étape 3","ArrowDown":"arrow-down", "description": "Description étape 2" },
+          { "title": "Étape 4","ArrowDown":"arrow-down", "description": "Description étape 2" },
+          { "title": "Étape 5","ArrowDown":"arrow-down", "description": "Description étape 2" }
+        ],
+        "validations": [
+          { "validate": "Projet validé", "icon": "circle-check" },
+          { "validate": "Projet validé", "icon": "circle-check" },
+          { "validate": "Projet validé", "icon": "circle-check" }
+        ]
+      },
+   {
+        "id": 4,
+        "image": "/assets/Qwenta.webp",
+        "title": "Menu Maker",
+        "description": "Plannification du développement de l'application Menu Maker.",
+        "category": "Cas Clients",
+        "skills": ["/assets/skills/logo-feeder.webp", "/assets/skills/notion.webp", "/assets/skills/powerpoint.webp"],
+        "steps": [
+          { "title": "Étape 1","ArrowDown":"arrow-down", "description": "Créez la page de présentation des travaux à partir du HTML existant." },
+          { "title": "Étape 2","ArrowDown":"arrow-down", "description": "Réalisation du filtre des travaux." },
+          { "title": "Étape 3","ArrowDown":"arrow-down", "description": "Authentification de l’utilisateur." },
+          { "title": "Étape 4","ArrowDown":"arrow-down", "description": "Suppression de travaux existants." },
+          { "title": "Étape 5","ArrowDown":"arrow-down", "description": "Envoi d’un nouveau projet au back-end via le formulaire de la modale." }
+        ],
+        "validations": [
+          { "validate": "1. Manipuler les éléments du DOM avec JavaScript.", "icon": "circle-check" },
+          { "validate": "2. Récupérer les données utilisateurs dans le JavaScript via des formulaires.", "icon": "circle-check" },
+          { "validate": "3. Gérer les événements utilisateurs avec JavaScript.", "icon": "circle-check" }
+        ]
+      },
+      {
+        "id": 5,
+        "image": "/assetsKasa.webp",
+        "title": "Kasa",
+        "description": "Création du site de locations immobilières Kasa.",
+        "category": "Cas Clients",
+        "skills": ["/assets/skills/node.webp", "/assets/skills/logo-js.webp", "/assets/skills/logo-react.webp"],
+        "steps": [
+          { "title": "Étape 1","ArrowDown":"arrow-down", "description": "Initialisez le projet avec React et ajouter React Router." },
+          { "title": "Étape 2","ArrowDown":"arrow-down", "description": "Creer les différentes pages du site." },
+          { "title": "Étape 3","ArrowDown":"arrow-down", "description": "Création de composants réutilisables." },
+          { "title": "Étape 4","ArrowDown":"arrow-down", "description": "Finalisation des pages." },
+          { "title": "Étape 5","ArrowDown":"arrow-down", "description": "Gérer l'erreur sur l'id d'une propriété." }
+        ],
+        "validations": [
+          { "validate": "1. Développer des éléments de l'interface d'un site web grâce à des composants React.", "icon": "circle-check" },
+          { "validate": "2. Initialiser une application avec Create React App", "icon": "circle-check" },
+          { "validate": "3. Configurer la navigation entre les pages de l'application avec React Router.", "icon": "circle-check" }
+        ]
+      },
+      {
+        "id": 6,
+        "image": "/assets/Nina.webp",
+        "title": "Nina Carducci",
+        "description": "Optimisation du référencement du site de Nina Carducci.",
+        "category": "Cas Clients",
+        "skills": ["/assets/skills/lighthouse.webp", "/assets/skills/wave.webp", "/assets/skills/gimp.webp"],
+        "steps": [
+          { "title": "Étape 1","ArrowDown":"arrow-down", "description": "Listez les optimisations qui peuvent être réalisées." },
+          { "title": "Étape 2","ArrowDown":"arrow-down", "description": "Optimisez les performances du site." },
+          { "title": "Étape 3","ArrowDown":"arrow-down", "description": "Optimisez le SEO technique." },
+          { "title": "Étape 4","ArrowDown":"arrow-down", "description": "Ajoutez le référencement local et réseaux sociaux." },
+          { "title": "Étape 5","ArrowDown":"arrow-down", "description": "Correction de l’accessibilité." }
+        ],
+        "validations": [
+          { "validate": "Optimiser la performance d'un site web", "icon": "circle-check" }
+        ]
+      },
+      {
+        "id": 7,
+        "image": "/assets/Events.webp",
+        "title": "724 events",
+        "description": "Débbugage du site d'évenementiel 724 Events.",
+        "category": "Cas Clients",
+        "skills": ["/assets/skills/yarn.webp", "/assets/skills/jest.webp", "/assets/skills/logo-react.webp"],
+        "steps": [
+          { "title": "Étape 1","ArrowDown":"arrow-down", "description": "Mettez en place votre environnement de développement." },
+          { "title": "Étape 2","ArrowDown":"arrow-down", "description": "Installez React Developer Tools." },
+          { "title": "Étape 3","ArrowDown":"arrow-down", "description": "Réparez les bugs." },
+          { "title": "Étape 4","ArrowDown":"arrow-down", "description": "Rédigez le cahier de recette." },
+          { "title": "Étape 5","ArrowDown":"arrow-down", "description": "Ajoutez des tests additionnel." }
+        ],
+        "validations": [
+          { "validate": "1. Débugger un site web grâce aux Chrome DevTools.", "icon": "circle-check" },
+          { "validate": "2. Rédiger un cahier de recette pour tester un site", "icon": "circle-check" }
+        ]
+      },  {
+        "id": 8,
+        "image": "/assets/ArgentBank.webp",
+        "title": "Argent Bank",
+        "description": "Implémentation du front-end de l'application bancaire Argent-Bank.",
+        "category": "Cas Clients",
+        "skills": ["/assets/skills/logo-swagger.webp", "/assets/skills/logo-react.webp", "/assets/skills/redux.webp","/assets/skills/mongo.webp"],
+        "steps": [
+          { "title": "Étape 1","ArrowDown":"arrow-down", "description": "Mise en place l’application et intégrez les maquettes." },
+          { "title": "Étape 2","ArrowDown":"arrow-down", "description": "Mise en place le state global avec Redux et la connection de l’utilisateur" },
+          { "title": "Étape 3","ArrowDown":"arrow-down", "description": "Modifiez le nom d’utilisateur via le formulaire." },
+          { "title": "Étape 4","ArrowDown":"arrow-down", "description": "Analyse des maquettes des transactions." },
+          { "title": "Étape 5","ArrowDown":"arrow-down", "description": "Écrivez les différents endpoints dans le fichier Swagger." }
+        ],
+        "validations": [
+          { "validate": "1. Afficher les données du back end sur l'interface via des appels API.", "icon": "circle-check" },
+          { "validate": "2. Configurer des routes API pour la communication client / serveur.", "icon": "circle-check" },
+          { "validate": "3. Implémenter des données avec Redux pour assurer le fonctionnement du Frontend.", "icon": "circle-check" }
+        ]
+      }
+  ]
+  

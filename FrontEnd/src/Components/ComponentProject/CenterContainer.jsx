@@ -1,4 +1,5 @@
 import { useState, useRef, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import ButtonPath from '@/Components/ButtonPath';
 import { ReactComponent as TextH1 } from '@/assets/icon-project/project-title-h1.svg';
 import { ReactComponent as TextH2 } from '@/assets/icon-project/project-title-h2.svg';
@@ -18,24 +19,8 @@ import { ReactComponent as TitleButtonWhiteFirst } from '@/assets/icon-project/t
 import { ReactComponent as TitleButtonWhiteSecond } from '@/assets/icon-project/title-project-5.svg';
 import { ReactComponent as TitleButtonWhiteThird } from '@/assets/icon-project/title-project-6.svg';
 import { ReactComponent as RectangleProject } from '@/assets/icon-project/rectangle-project.svg';
-
-const projectsData = [
-    { id: 1, image: 'image1.jpg', title: 'Project  1', description: 'Description of project 1', category: 'Cas Clients' },
-    { id: 2, image: 'image11.jpg', title: 'Project   2', description: 'Description of project 11', category: 'Cas Clients' },
-    { id: 3, image: 'image6.jpg', title: 'Project  3', description: 'Description of project 6', category: 'Cas Clients' },
-    { id: 5, image: 'image7.jpg', title: 'Project  5', description: 'Description of project 7', category: 'Projets perso' },
-    { id: 6, image: 'image3.jpg', title: 'Project  6', description: 'Description of project 3', category: 'Site vitrines' },
-    { id: 7, image: 'image4.jpg', title: 'Project  7', description: 'Description of project 4', category: 'Application Web' },
-    { id: 8, image: 'image5.jpg', title: 'Project  8', description: 'Description of project 5', category: 'Landing page' },
-    { id: 9, image: 'image12.jpg', title: 'Project   9', description: 'Description of project 12', category: 'Projets perso' },
-    { id: 10, image: 'image8.jpg', title: 'Project 10', description: 'Description of project 8', category: 'Site vitrines' },
-    { id: 11, image: 'image9.jpg', title: 'Project 11', description: 'Description of project 9', category: 'Application Web' },
-    { id: 12, image: 'image10.jpg', title: 'Project  12', description: 'Description of project 10', category: 'Landing page' },
-    { id: 13, image: 'image1.jpg', title: 'Project 13', description: 'Description of project 1', category: 'Cas Clients' },
-    { id: 14, image: 'image11.jpg', title: 'Project  14', description: 'Description of project 11', category: 'Cas Clients' },
-    { id: 15, image: 'image6.jpg', title: 'Project 15', description: 'Description of project 6', category: 'Cas Clients' },
-
-];
+import dataProject from '@/Components/ComponentProject/DataProject.json';
+const projectsData = dataProject;
 
 const CenterContainer = () => {
     const [selectedFilter, setSelectedFilter] = useState('all');
@@ -43,8 +28,11 @@ const CenterContainer = () => {
     const [visibleProjects, setVisibleProjects] = useState(projectsData.slice(0, 4));
     const [currentIndex, setCurrentIndex] = useState(0);
     const contentRef = useRef(null);
+    const [activeProject, setActiveProject] = useState(null);
 
-
+    const handleToggle = (projectId) => {
+        setActiveProject(activeProject === projectId ? null : projectId);
+    };
     // Fonction pour mettre à jour les projets visibles en fonction du filtre
     const updateVisibleProjects = (newFilter) => {
         const newFilteredProjects = newFilter === 'all' ? projectsData : projectsData.filter(p => p.category === newFilter);
@@ -131,13 +119,33 @@ const CenterContainer = () => {
                     <div className="line vertical"></div>
                     <div className="line horizontal"></div>
                     <div className="project-grid">
-                        {visibleProjects.map((project) => (
-                            <div key={project.id} className="project-item">
-                                <img src={project.image} alt={project.title} />
-                                <h3>{project.title}</h3>
-                                <p>{project.description}</p>
-                            </div>
-                        ))}
+                        {visibleProjects.map((project) => {
+                            const isActive = activeProject === project.id;
+
+                            return (
+                                <div
+                                    key={project.id}
+                                    className={`project-item ${isActive ? "active" : ""}`}
+                                    onClick={() => handleToggle(project.id)}
+                                >
+                                    <h2 className={isActive ? "hidden" : ""}>
+                                        {project.title}
+                                    </h2>
+                                    <div className={`active-content-card ${isActive ? "visible" : ""}`}>
+                                        <h3>{project.title}</h3>
+                                        <p>{project.description}</p>
+                                        <Link className='project-link' to={`/ProjectDetail/${project.id}`}>Voir plus</Link>
+                                        <div className='skills-pics'>
+                                            {project.skills?.map((skill, index) => (
+                                                <div className="skill" key={index}>
+                                                    <img className='skills-pic' src={skill} alt={`Skill ${index}`} />
+                                                </div>
+                                            ))}
+                                        </div>
+                                    </div>
+                                </div>
+                            );
+                        })}
                     </div>
                     <div className="scroll-down-container">
                         <div className="scroll-rectangle">
