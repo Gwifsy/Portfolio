@@ -35,12 +35,14 @@ const CenterContainer = () => {
     };
     // Fonction pour mettre à jour les projets visibles en fonction du filtre
     const updateVisibleProjects = (newFilter) => {
-        const newFilteredProjects = newFilter === 'all' ? projectsData : projectsData.filter(p => p.category === newFilter);
-        setFilteredProjects(newFilteredProjects);
-        setVisibleProjects(newFilteredProjects.slice(0, 4)); // Réinitialiser les projets visibles après le filtre
-        setCurrentIndex(0); // Réinitialiser l'index pour revenir au début
-    };
+        const newFilteredProjects = newFilter === 'all'
+            ? projectsData
+            : projectsData.filter(p => p.category.includes(newFilter)); // Vérifie si la catégorie est dans le tableau
 
+        setFilteredProjects(newFilteredProjects);
+        setVisibleProjects(newFilteredProjects.slice(0, 4)); // Réinitialise les projets visibles
+        setCurrentIndex(0); // Réinitialise l'index
+    };
 
     const handleFilterClick = (category) => {
         console.log("Category clicked:", category); // Ajoute un log pour vérifier quelle catégorie est sélectionnée
@@ -107,7 +109,7 @@ const CenterContainer = () => {
                     <div className='button-white-project' onClick={() => handleFilterClick('Site vitrines')}>
                         <TitleButtonWhiteFirst className="title-button-white-project" />
                     </div>
-                    <div className='button-white-project' onClick={() => handleFilterClick('Application Web')}>
+                    <div className='button-white-project' onClick={() => handleFilterClick('Application web')}>
                         <TitleButtonWhiteSecond className="title-button-white-project" />
                     </div>
                     <div className='button-white-project' onClick={() => handleFilterClick('Landing page')}>

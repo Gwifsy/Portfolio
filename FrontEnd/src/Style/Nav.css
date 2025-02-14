@@ -1,0 +1,56 @@
+.header-home {
+    box-shadow: 6px 13px 78px 0px rgba(0, 0, 0, 0.66);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(90deg, rgba(126, 100, 158, 0.534) 0%, rgba(45, 35, 56, 0.555) 100%);
+    padding: 0.8rem;
+    border-bottom: 3px solid;
+    border-image-slice: 3;
+    border-image-source: linear-gradient(90deg, rgba(201, 237, 251, 0.75) 33%, rgba(205, 145, 219, 0.75) 67.5%);
+}
+
+.nav-logo {
+    display: flex;
+    margin-left: 120px;
+    width: 120px;
+    opacity: 0.9;
+}
+
+.lottie-astronaut {
+    position: absolute;
+    left: 255px;
+    bottom: 850px;
+    height: 60px;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    margin-right: 60px;
+    gap: 50px;
+}
+
+.nav-link {
+    margin-top: 15px;
+    display: flex;
+    width: 100px;
+    height: auto;
+}
+
+.nav-link #test {
+    filter: contrast(1.5);
+    fill: url(#paint0_linear_25_6);
+}
+
+.nav-link:hover #test {
+    fill: url(#paint0_linear_25_7);
+    filter: contrast(1.2);
+}
+
+.nav-none {
+    display: none;
+}

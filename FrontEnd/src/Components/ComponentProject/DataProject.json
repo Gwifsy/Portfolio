@@ -4,7 +4,7 @@
       "image": "/assets/Booki.webp",
       "title": "Booki",
       "description": "Création du site de locations immobilières Booki.",
-      "category": "Cas Clients",
+      "category": ["Landing page","Projets perso"],
       "skills": ["/assets/skills/logo-html.webp", "/assets/skills/logo-css.webp", "/assets/skills/logo-github.webp"],
       "steps": [
         { "title": "Étape 1","ArrowDown":"arrow-down", "description": "Mettre en place l'environnement de développement." },
@@ -24,7 +24,7 @@
         "image": "/assets/OhMyFood.webp",
         "title": "Oh My Food",
         "description": "Création du site type menu maker OhMyFood.",
-        "category": "Cas Clients",
+        "category":[ "Projets perso","Site vitrines"],
         "skills": ["/assets/skills/logo-html.webp", "/assets/skills/logo-css.webp", "/assets/skills/logo-sass.webp"],
         "steps": [
           { "title": "Étape 1","ArrowDown":"arrow-down", "description": "Mettre en place l'environnement de développement." },
@@ -44,7 +44,7 @@
         "image": "/assets/Sophie.webp",
         "title": "Sophie Bluel",
         "description": "Création du portfolio de l'architecte Sophie Bluel.",
-        "category": "Cas Clients",
+        "category": ["Projets perso","Site vitrines"],
         "skills": ["/assets/skills/logo-sass.webp", "/assets/skills/logo-swagger.webp", "/assets/skills/logo-js.webp"],
         "steps": [
           { "title": "Étape 1","ArrowDown":"arrow-down", "description": "Description étape 1" },
@@ -84,7 +84,7 @@
         "image": "/assetsKasa.webp",
         "title": "Kasa",
         "description": "Création du site de locations immobilières Kasa.",
-        "category": "Cas Clients",
+        "category": "Site vitrines",
         "skills": ["/assets/skills/node.webp", "/assets/skills/logo-js.webp", "/assets/skills/logo-react.webp"],
         "steps": [
           { "title": "Étape 1","ArrowDown":"arrow-down", "description": "Initialisez le projet avec React et ajouter React Router." },
@@ -104,7 +104,7 @@
         "image": "/assets/Nina.webp",
         "title": "Nina Carducci",
         "description": "Optimisation du référencement du site de Nina Carducci.",
-        "category": "Cas Clients",
+        "category": ["Cas Clients","Landing page"],
         "skills": ["/assets/skills/lighthouse.webp", "/assets/skills/wave.webp", "/assets/skills/gimp.webp"],
         "steps": [
           { "title": "Étape 1","ArrowDown":"arrow-down", "description": "Listez les optimisations qui peuvent être réalisées." },
@@ -140,7 +140,7 @@
         "image": "/assets/ArgentBank.webp",
         "title": "Argent Bank",
         "description": "Implémentation du front-end de l'application bancaire Argent-Bank.",
-        "category": "Cas Clients",
+        "category": ["Application web","Projets perso"],
         "skills": ["/assets/skills/logo-swagger.webp", "/assets/skills/logo-react.webp", "/assets/skills/redux.webp","/assets/skills/mongo.webp"],
         "steps": [
           { "title": "Étape 1","ArrowDown":"arrow-down", "description": "Mise en place l’application et intégrez les maquettes." },

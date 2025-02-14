@@ -1,0 +1,26 @@
+.container-social {
+    display: flex;
+    margin-bottom: 65px;
+    flex-direction: column;
+    gap: 36px;
+}
+
+.icon-sociale {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 65px;
+    height: 65px;
+    position: relative;
+}
+
+.icon-center-social {
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    overflow: visible;
+}
+
+.icon-sociale:hover svg {
+    transform: scale(1.1);
+}

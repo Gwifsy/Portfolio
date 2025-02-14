@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import PropTypes from 'prop-types';
 import { ReactComponent as CircleCheck } from '@/assets/icon-project/circle-check.svg';
 import { ReactComponent as ArrowDown } from '@/assets/icon-project/arrow-down.svg';
 
@@ -79,6 +80,22 @@ const ContainerDetailProject = ({ title, cover, steps, validations }) => {
             </div>
         </section>
     );
+};
+ContainerDetailProject.propTypes = {
+    title: PropTypes.string.isRequired,
+    cover: PropTypes.string.isRequired,
+    steps: PropTypes.arrayOf(
+        PropTypes.shape({
+            title: PropTypes.string.isRequired,
+            description: PropTypes.string.isRequired
+        })
+    ).isRequired,
+    validations: PropTypes.arrayOf(
+        PropTypes.shape({
+            validate: PropTypes.string.isRequired,
+            icon: PropTypes.string.isRequired
+        })
+    ).isRequired
 };
 
 export default ContainerDetailProject;

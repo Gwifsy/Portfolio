@@ -1,0 +1,322 @@
+.container-project {
+    padding: 0px 100px;
+}
+
+.container-title-button-project {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-left: 55px;
+    margin-top: 35px;
+}
+
+.title-h1-project {
+    width: 99%;
+}
+
+.title-h2-project {
+    width: 99%;
+}
+
+
+.button-path-project {
+    margin: 10px;
+    width: auto;
+}
+
+.theme-project {
+    position: absolute;
+    left: 55px;
+    top: 37%;
+}
+
+.container-button-theme-project {
+    display: flex;
+    height: 570px;
+    margin-left: 10px;
+    margin-top: 20px;
+}
+
+
+.line-project {
+    position: absolute;
+    left: 98px;
+    top: 42%;
+    height: 500px;
+}
+
+.container-button-filter {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 30px;
+    gap: 20px;
+}
+
+.button-purple-project {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    gap: 10px;
+    background: linear-gradient(90deg, rgba(86, 79, 156, 0.82) -3.12%, rgba(49, 150, 213, 0.83) 96.88%);
+    border: 1px solid rgba(227, 210, 238, 0.555);
+    border-radius: 0px 3px 3px 0px;
+    cursor: pointer;
+}
+
+.button-icon-margin-project {
+    margin-left: 20px;
+}
+
+.button-title-margin-project {
+    margin-top: 18px;
+    margin-right: 5px;
+}
+
+.button-white-project {
+    display: flex;
+    align-items: center;
+    width: 70%;
+    height: 50px;
+    border: 2px solid;
+    border-image-source: linear-gradient(90deg, rgba(86, 68, 121, 0.44) 0%, rgba(227, 210, 238, 0.44) 75%);
+    border-image-slice: 1;
+    background: linear-gradient(90deg, rgba(86, 79, 156, 0.82) -3.12%, rgba(49, 150, 213, 0.83) 96.88%);
+    cursor: pointer;
+}
+
+.title-button-white-project {
+    margin-left: 20px;
+}
+
+.title-button-white-project {
+    margin-top: 6px;
+}
+
+.content-project {
+    margin-left: 60px;
+    margin-top: 30px;
+    width: 60%;
+    height: 453px;
+    background: linear-gradient(206deg, rgb(173 69 207 / 44%) 838.51%, rgb(51 154 217 / 38%) 917.46%);
+    background-blend-mode: lighten;
+    border: 2px solid;
+    border-image-source: linear-gradient(270deg, #aeedfbb7 36.5%, #bb9be8b7 79%);
+    border-image-slice: 1;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 40px 72.7px 0px rgba(0, 0, 0, 0.83);
+}
+
+.line {
+    position: absolute;
+    border: 1px solid rgba(174, 237, 251, 0.568);
+
+}
+
+.vertical {
+    width: 2px;
+    height: 100%;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+}
+
+.horizontal {
+    width: 100%;
+    height: 2px;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 35px;
+    width: 100%;
+    padding: 30px;
+    height: 100%;
+    text-align: center;
+    font-family: "Rajdhani", sans-serif;
+}
+
+.project-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    backdrop-filter: blur(10px) saturate(180%);
+    background-color: #401f4380;
+    text-shadow: 0px 0px 20px #ffffff;
+    box-shadow: 0px 0px 14px 4px;
+    padding: 20px;
+    gap: 40px;
+    color: azure;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    line-height: 1;
+    z-index: 1;
+}
+
+.project-item h2 {
+    cursor: pointer;
+}
+
+.active-content-card {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    flex-direction: column;
+}
+
+.project-item.active .active-content-card {
+    display: flex;
+    opacity: 1;
+    max-height: 15px;
+
+    gap: 10px;
+}
+
+.project-item h2 {
+    font-size: 33px;
+
+}
+
+.project-item.active h2 {
+    display: none;
+}
+
+.project-item p {
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.project-link {
+    text-decoration: none;
+    color: rgb(194 111 182);
+}
+
+.skills-pics {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+    width: fit-content;
+    width: 40px;
+    height: 40px;
+    gap: 25px;
+
+}
+
+.skills-pics img {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #614596;
+    width: 30px;
+    height: 25px;
+    box-shadow: 3px 3px 7px rgb(170 175 183 / 80%), -3px -3px 7px rgb(159 166 181 / 80%);
+    border-radius: 100px;
+    object-fit: scale-down;
+}
+
+
+.scroll-down-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 99%;
+}
+
+.scroll-rectangle {
+    width: 10px;
+    height: 450px;
+    background: #aeedfbb7;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.dot {
+    display: flex;
+    color: #0a5e59;
+    justify-content: center;
+    width: 25px;
+    height: 25px;
+    border-radius: 29px;
+    background-color: rgb(255, 255, 255);
+    align-items: center;
+    position: absolute;
+    top: -10px;
+    animation: drop 3s infinite;
+    font-size: 14px;
+}
+
+@keyframes drop {
+    0% {
+        top: -10px;
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 1;
+    }
+
+    100% {
+        top: 100%;
+        opacity: 0;
+    }
+}
+
+.rectangle-wrapper {
+    position: relative;
+    margin-bottom: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: visible;
+}
+
+.container-icon-social-project {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.icon-wrapper {
+    overflow: visible;
+    position: relative;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-center {
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    overflow: visible;
+}
