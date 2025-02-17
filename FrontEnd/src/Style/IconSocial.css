@@ -1,19 +1,29 @@
 .container-social {
     display: flex;
-    margin-bottom: 65px;
+    margin-bottom: 4rem;
+    /* Utilisation de rem pour un meilleur contrôle */
     flex-direction: column;
-    gap: 36px;
+    gap: 2.25rem;
+    /* Utilisation de rem pour l'écart entre les icônes */
+    align-items: center;
+    /* Centrer les icônes */
 }
 
+/* Icône sociale individuelle */
 .icon-sociale {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 65px;
-    height: 65px;
+    width: 4.0625rem;
+    /* 65px en rem */
+    height: 4.0625rem;
+    /* 65px en rem */
     position: relative;
+    transition: transform 0.3s ease-in-out;
+    /* Transition douce pour l'agrandissement */
 }
 
+/* Icone centrée dans l'élément */
 .icon-center-social {
     position: absolute;
     width: 50%;
@@ -21,6 +31,52 @@
     overflow: visible;
 }
 
+/* Effet de hover sur l'icône */
 .icon-sociale:hover svg {
     transform: scale(1.1);
+}
+
+@media (max-width: 970px) {
+    .container-social {
+        display: flex;
+        flex-direction: row;
+        gap: 36px;
+        align-content: space-around;
+        justify-content: flex-start;
+    }
+}
+
+@media (max-width: 690px) {
+
+    .container-social {
+        display: flex;
+        flex-direction: row;
+        gap: 17px;
+        align-content: center;
+        justify-content: center;
+        top: -40px;
+        position: relative;
+        align-items: center;
+    }
+
+    .icon-sociale {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 3.0625rem;
+        height: 4.0625rem;
+        position: relative;
+        transition: transform 0.3sease-in-out;
+    }
+}
+
+
+@media (max-width: 375px) {
+    .container-social {
+        top: -70px;
+    }
+
+    .icon-sociale {
+        width: 2.5625rem;
+    }
 }

@@ -9,6 +9,7 @@
 
 .container-title-button-home {
     text-align: center;
+    width: 100%;
     flex: 1;
 }
 
@@ -19,4 +20,40 @@
 .text-h2-home {
     margin-top: 15px;
     width: 100%;
+}
+
+@media (max-width: 970px) {
+    .container-title-button-social-home {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 85%;
+        margin: 112px auto;
+        flex-direction: column-reverse;
+    }
+
+    .text-h2-home {
+        margin-top: 25px;
+    }
+}
+
+@media (max-width: 690px) {
+    .text-h2-home {
+        margin-top: -30px;
+    }
+}
+
+@media (max-width: 375px) {
+    .container-title-button-social-home {
+        margin: 132px auto;
+    }
+
+    .container-title-button-home {
+        margin-top: 39px;
+    }
+
+    .text-h2-home {
+        margin-top: -70px;
+        width: 100%;
+    }
 }
