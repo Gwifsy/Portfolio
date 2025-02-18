@@ -52,7 +52,7 @@ const CenterContainer = () => {
 
     return (
         <div className="contact-form">
-            <IconSocial className="icon-social-contact" />
+
             <form className='form-contact-container' onSubmit={handleSubmit}>
                 <BgContact className="bg-form" />
                 <div className="form-group ">
@@ -112,8 +112,8 @@ const CenterContainer = () => {
                             <button className='input-padding input-font' type="submit">Envoyer</button>
                         </div>
                     </label>
-
                 </div>
+                <IconSocial className="icon-social-contact" />
             </form >
         </div >
     );

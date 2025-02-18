@@ -190,3 +190,27 @@ textarea::-webkit-scrollbar-track {
     background: rgba(255, 255, 255, 0.1);
     border-radius: 4px;
 }
+
+@media (max-width: 970px) {
+    .form-contact-container {
+        width: 690px;
+    }
+
+    .form-group {
+        width: 60%;
+    }
+
+    .bg-form {
+        display: none;
+    }
+}
+
+@media (max-width: 690px) {
+    .form-group {
+        width: 86%;
+    }
+
+    .form-contact-container {
+        width: 322px;
+    }
+}

@@ -5,7 +5,7 @@ import { ReactComponent as Circle } from '@/assets/icon-social/icon-circle-butto
 import PropTypes from 'prop-types';
 const IconSocial = ({ className = "" }) => {
     return (
-        <div className={`container-social ${className}`}>
+        <div className={` ${className}`}>
             <a className="icon-sociale" href="/">
                 <Circle />
                 <Linkedin className="icon-center-social" />

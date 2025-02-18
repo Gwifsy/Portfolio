@@ -47,9 +47,9 @@ const CenterContainer = () => {
     return (
         <section className='container-about'>
             <div className='container-button-top'>
-                <Link to="/project" className='' alt="project"><Project /></Link>
-                <Link to="/contact" className='' alt="contact"><Contact /></Link>
-                <a className='gg' href="/" target="_blank" rel="noopener noreferrer" alt="cv"><Cv /></a>
+                <Link to="/project" className='button-link-top' alt="project"><Project /></Link>
+                <Link to="/contact" className='button-link-top' alt="contact"><Contact /></Link>
+                <a className='button-link-top' href="/" target="_blank" rel="noopener noreferrer" alt="cv"><Cv /></a>
             </div>
             <div className='container-content-about'>
                 <button onClick={prevSlide} className='chevron-left-about'>
@@ -81,9 +81,9 @@ const CenterContainer = () => {
                 </button>
             </div>
             <div className='container-button-bottom'>
-                <Linkedin />
-                <Twitter />
-                <Github />
+                <Linkedin className="button-link-bottom" />
+                <Twitter className="button-link-bottom" />
+                <Github className="button-link-bottom" />
             </div>
         </section>
     );

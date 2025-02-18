@@ -44,9 +44,25 @@
         align-content: space-around;
         justify-content: flex-start;
     }
+
+
+    .icon-social-contact {
+        top: 87%;
+        left: 34%;
+        display: flex;
+        flex-direction: row;
+        gap: 36px;
+        align-content: space-around;
+        justify-content: flex-start;
+    }
 }
 
 @media (max-width: 690px) {
+
+    .icon-social-contact {
+        position: initial;
+        margin-top: 10px;
+    }
 
     .container-social {
         display: flex;
@@ -70,13 +86,30 @@
     }
 }
 
+@media (max-width: 475px) {
+    .icon-social-contact {
+        left: 28%;
+    }
+}
 
 @media (max-width: 375px) {
+    .icon-social-contact {
+        top: 85%;
+        left: 25%;
+    }
+
     .container-social {
         top: -70px;
     }
 
     .icon-sociale {
         width: 2.5625rem;
+    }
+}
+
+@media (max-width: 325px) {
+    .icon-social-contact {
+
+        left: 20%;
     }
 }

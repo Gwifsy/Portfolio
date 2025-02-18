@@ -30,6 +30,18 @@ const CenterContainer = () => {
     const contentRef = useRef(null);
     const [activeProject, setActiveProject] = useState(null);
 
+    const [projectsPerPage, setProjectsPerPage] = useState(window.innerWidth <= 900 ? 2 : 4);
+
+    useEffect(() => {
+        const handleResize = () => {
+            setProjectsPerPage(window.innerWidth <= 900 ? 2 : 4);
+            setVisibleProjects(filteredProjects.slice(0, window.innerWidth <= 900 ? 2 : 4));
+        };
+
+        window.addEventListener('resize', handleResize);
+        return () => window.removeEventListener('resize', handleResize);
+    }, [filteredProjects]);
+
     const handleToggle = (projectId) => {
         setActiveProject(activeProject === projectId ? null : projectId);
     };
@@ -40,7 +52,7 @@ const CenterContainer = () => {
             : projectsData.filter(p => p.category.includes(newFilter)); // Vérifie si la catégorie est dans le tableau
 
         setFilteredProjects(newFilteredProjects);
-        setVisibleProjects(newFilteredProjects.slice(0, 4)); // Réinitialise les projets visibles
+        setVisibleProjects(newFilteredProjects.slice(0, projectsPerPage)); // Réinitialise les projets visibles
         setCurrentIndex(0); // Réinitialise l'index
     };
 
@@ -53,33 +65,23 @@ const CenterContainer = () => {
     };
 
     const handleWheel = (e) => {
-        console.log("Wheel event:", e.deltaY); // Log de l'événement de scroll
-        // Désactiver le scroll si moins de 4 projets sont visibles
-        if (filteredProjects.length <= 4) {
-            console.log("Not enough projects for scrolling."); // Log si pas assez de projets
-            return; // Ne rien faire si moins de 4 projets sont filtrés
-        }
-        // Défilement vers le bas
-        if (e.deltaY > 0 && currentIndex + 4 < filteredProjects.length) {
-            const nextIndex = currentIndex + 4;
-            setVisibleProjects(filteredProjects.slice(nextIndex, nextIndex + 4));
+        if (filteredProjects.length <= projectsPerPage) return;
+        if (e.deltaY > 0 && currentIndex + projectsPerPage < filteredProjects.length) {
+            const nextIndex = currentIndex + projectsPerPage;
+            setVisibleProjects(filteredProjects.slice(nextIndex, nextIndex + projectsPerPage));
             setCurrentIndex(nextIndex);
-            console.log("Scrolled down to index:", nextIndex); // Log si on descend dans les projets
-        }
-        // Défilement vers le haut
-        else if (e.deltaY < 0 && currentIndex - 4 >= 0) {
-            const prevIndex = currentIndex - 4;
-            setVisibleProjects(filteredProjects.slice(prevIndex, prevIndex + 4));
+        } else if (e.deltaY < 0 && currentIndex - projectsPerPage >= 0) {
+            const prevIndex = currentIndex - projectsPerPage;
+            setVisibleProjects(filteredProjects.slice(prevIndex, prevIndex + projectsPerPage));
             setCurrentIndex(prevIndex);
-            console.log("Scrolled up to index:", prevIndex); // Log si on monte dans les projets
         }
     };
 
-    useEffect(() => {
-        setCurrentIndex(0); // Réinitialiser l'index chaque fois qu'un nouveau filtre est appliqué
-        console.log("Filter applied. Current index reset."); // Log après le réinitialisation de l'index
-    }, [selectedFilter]);
 
+    useEffect(() => {
+        setVisibleProjects(filteredProjects.slice(0, projectsPerPage));
+        setCurrentIndex(0);
+    }, [projectsPerPage, filteredProjects]);
     return (
         <section className='container-project'>
             <div className="container-title-button-project">

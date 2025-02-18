@@ -5,7 +5,7 @@ import { ReactComponent as TextH2 } from '@/assets/text-H2-home.svg';
 const CenterContainer = () => {
     return (
         <section className='container-title-button-social-home'>
-            <IconSocial />
+            <IconSocial className='container-social' />
             <div className="container-title-button-home">
                 <TextH1 className="text-h1-home" />
                 <TextH2 className="text-h2-home" />
