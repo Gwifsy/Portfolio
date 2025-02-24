@@ -17,9 +17,11 @@ const ProjectDetail = () => {
             <img className='bg-home' src={Background} alt="bg-home" />
             <Nav />
             <ContainerDetailProject
-                steps={project.steps}  // Les étapes 
-                validations={project.validations} // Les validations
-                cover={project.image} // L'image de couverture
+                title={project.title}
+                cover={project.image}
+                steps={project.steps}
+                validations={project.validations}
+                textCover={project.textCover}  // <-- Vérifie bien que ce prop est passé !
             />
         </div>
     );

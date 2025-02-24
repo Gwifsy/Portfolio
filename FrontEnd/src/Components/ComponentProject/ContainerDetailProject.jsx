@@ -1,13 +1,15 @@
 import { useState } from 'react';
 import { ReactComponent as CircleCheck } from '@/assets/icon-project/circle-check.svg';
 import { ReactComponent as ArrowDown } from '@/assets/icon-project/arrow-down.svg';
+import IconSocial from '@/assets/icon-social/logo-github.webp';  // Importation correcte de l'image PNG
 
 const icons = {
     "circle-check": CircleCheck,
-    "arrow-down": ArrowDown
+    "arrow-down": ArrowDown,
+    "icon-social": IconSocial  // Utilisation de l'image dans l'objet des icônes
 };
 
-const ContainerDetailProject = ({ title, cover, steps, validations }) => {
+const ContainerDetailProject = ({ title, cover, steps, validations, textCover }) => {
     const [openIndexes, setOpenIndexes] = useState([]);
 
     const toggleCollapse = (index) => {
@@ -19,7 +21,28 @@ const ContainerDetailProject = ({ title, cover, steps, validations }) => {
     return (
         <section className="container-detail-project">
             <div className="bg-detail-project">
-                <img src={cover} alt={title} />
+                <img className='bg-cover' src={cover} alt={title} />
+                <div className="overlay">
+                    {textCover && (
+                        <>
+                            <h1 className="context-title">{textCover.find(item => item.title)?.title}</h1>
+                            {textCover
+                                .filter(item => item.p)
+                                .map((item, index) => (
+                                    <p key={index} className="context-container">{item.p}</p>
+                                ))
+                            }
+                            {textCover.find(item => item.githubLink) && (
+                                <div className="social-icon-container">
+                                    <a href={textCover.find(item => item.githubLink)?.githubLink} target="_blank" rel="noopener noreferrer">
+                                        {/* Affichage de l'image GitHub */}
+                                        <img src={IconSocial} alt="GitHub" className="social-icon" id='tt' />
+                                    </a>
+                                </div>
+                            )}
+                        </>
+                    )}
+                </div>
             </div>
             <div className='container-pratical-acquired'>
                 <div className="container-pratical-project">

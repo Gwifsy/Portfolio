@@ -17,7 +17,27 @@
         { "validate": "1. Intégrer du contenu conformément à une maquette avec HTML et CSS.", "icon": "circle-check" },
         { "validate": "2. Installer un environnement de développement front-end.", "icon": "circle-check" },
         { "validate": "3. Implémenter une interface responsive avec HTML et CSS.", "icon": "circle-check" }
-      ]
+      ],
+      "textCover": [
+    {
+        "title": "Booki"
+    },
+    {
+        "p": "Début de l’alternance chez booki en tant que développeur web."
+    },
+    {
+        "p": "L’entreprise veut développer un site Internet qui permet aux usagers de trouver des hébergements et des activités dans la ville de leur choix."
+    },
+    {
+        "p": "Nous sommes chargé d'intégrer l'interface du site avec du code HTML et CSS."
+    },
+    {
+        "IconSocial": "icon-social"
+    },
+    {
+        "githubLink": "https://github.com/Gwifsy/Booki"
+    }
+]
     },
     {
         "id": 2,
@@ -37,6 +57,26 @@
           { "validate": "1. Intégrer une maquette en mobile-first", "icon": "circle-check" },
           { "validate": "2. Versionner son projet avec Git et Github", "icon": "circle-check" },
           { "validate": "3. Mettre en œuvre des animations CSS.", "icon": "circle-check" }
+        ],
+        "textCover": [
+            {
+                "title": "Oh My Food"
+            },
+            {
+                "p": "On a intégré Ohmyfood en tant que développeur junior."
+            },
+            {
+                "p": "Il s’agit d’une jeune startup qui voudrait s'imposer sur le marché de la restauration."
+            },
+            {
+                "p": "Notre mission est de développer un site “mobile first” qui répertorie les menus de restaurants gastronomiques."
+            },
+            {
+                "IconSocial": "icon-social"
+            },
+            {
+                "githubLink": "https://github.com/Gwifsy/OhMyFood"
+            }
         ]
       },
       {
@@ -54,9 +94,26 @@
           { "title": "Étape 5","ArrowDown":"arrow-down", "description": "Description étape 2" }
         ],
         "validations": [
-          { "validate": "Projet validé", "icon": "circle-check" },
-          { "validate": "Projet validé", "icon": "circle-check" },
-          { "validate": "Projet validé", "icon": "circle-check" }
+          { "validate": "1. Manipuler les éléments du DOM avec JavaScript.", "icon":"circle-check" },
+          { "validate": "2. Récupérer les données utilisateurs dans le JavaScript via des formulaires.", "icon": "circle-check" },
+          { "validate": "3. Gérer les événements utilisateurs avec JavaScript.", "icon": "circle-check" }
+        ],
+        "textCover": [
+            {
+                "title": "Sophie Bluel"
+            },
+            {
+                "p": "Nous travaillons comme développeur front-end pour l’agence ArchiWebos qui comprend 50 salariés."
+            },
+            {
+                "p": "Ayant terminé notre dernier projet avec un peu d'avance, nous sommes envoyé en renfort comme développeur front-end au sein d’une équipe qui travaille sur la conception du site portfolio d’une architecte d’intérieur."
+            },
+            {
+                "IconSocial": "icon-social"
+            },
+            {
+                "githubLink": "https://github.com/Gwifsy/Archiwebos"
+            }
         ]
       },
    {
@@ -77,11 +134,31 @@
           { "validate": "1. Manipuler les éléments du DOM avec JavaScript.", "icon": "circle-check" },
           { "validate": "2. Récupérer les données utilisateurs dans le JavaScript via des formulaires.", "icon": "circle-check" },
           { "validate": "3. Gérer les événements utilisateurs avec JavaScript.", "icon": "circle-check" }
-        ]
+        ],
+          "textCover": [
+    {
+        "title": "Menu Maker"
+    },
+    {
+        "p": "Vous êtes développeur front-end au sein de l’agence Webgencia."
+    },
+    {
+        "p": "On vous confie une mission un peu différente de d’habitude, il ne s’agit pas de développer un site mais de mener, préparer et planifier le projet de développement d’un site."
+    },
+    {
+        "p": "Il s’agit d’un site permettant aux restaurateurs d’afficher et de mettre en page leurs menus facilement, en quelques clics."
+    },
+    {
+        "IconSocial": "icon-social"
+    },
+    {
+        "githubLink": "https://github.com/ton-utilisateur/booki"
+    }
+]
       },
       {
         "id": 5,
-        "image": "/assetsKasa.webp",
+        "image": "/assets/Kasa.webp",
         "title": "Kasa",
         "description": "Création du site de locations immobilières Kasa.",
         "category": "Site vitrines",
@@ -97,7 +174,27 @@
           { "validate": "1. Développer des éléments de l'interface d'un site web grâce à des composants React.", "icon": "circle-check" },
           { "validate": "2. Initialiser une application avec Create React App", "icon": "circle-check" },
           { "validate": "3. Configurer la navigation entre les pages de l'application avec React Router.", "icon": "circle-check" }
-        ]
+        ],
+          "textCover": [
+    {
+        "title": "Kasa"
+    },
+    {
+        "p": "Kasa vous recrute en tant que développeur front-end en freelance pour développer sa nouvelle plateforme web."
+    },
+    {
+        "p": "Le site de Kasa a été codé il y a maintenant plus de 10 ans en ASP.NET avec un code legacy important."
+    },
+    {
+        "p": "Laura, la CTO, a donc lancé une refonte totale pour passer à une stack complète en JavaScript avec NodeJS côté back-end, et React côté front-end, ce qui va être notre rôle ici."
+    },
+    {
+        "IconSocial": "icon-social"
+    },
+    {
+        "githubLink": "https://github.com/Gwifsy/Kasa"
+    }
+]
       },
       {
         "id": 6,
@@ -115,7 +212,24 @@
         ],
         "validations": [
           { "validate": "Optimiser la performance d'un site web", "icon": "circle-check" }
-        ]
+        ],
+          "textCover": [
+    {
+        "title": "Nina Carducci"
+    },
+    {
+        "p": "Vous êtes développeur freelance et vous décidez de proposer vos services d’optimisation SEO à de nouveaux clients."
+    },
+    {
+        "p": "Parmi vos prospects, il y a le site de Nina Carducci, une photographe dont vous a parlé l’un de vos amis, vous allez donc devoir optimisez le réferencement de celle-ci."
+    },
+    {
+        "IconSocial": "icon-social"
+    },
+    {
+        "githubLink": "https://github.com/Gwifsy/ninacarducci"
+    }
+]
       },
       {
         "id": 7,
@@ -134,6 +248,23 @@
         "validations": [
           { "validate": "1. Débugger un site web grâce aux Chrome DevTools.", "icon": "circle-check" },
           { "validate": "2. Rédiger un cahier de recette pour tester un site", "icon": "circle-check" }
+        ],
+        "textCover": [
+            {
+                "title": "724 events"
+            },
+            {
+                "p": "L’agence souhaite publier la nouvelle version de son site vitrine."
+            },
+            {
+                "p": "Le site est fonctionnel, mais quelques bugs entravent le bon usage par les visiteurs. 724events fait donc appel à vous pour finaliser le travail."
+            },
+            {
+                "IconSocial": "icon-social"
+            },
+            {
+                "githubLink": "https://github.com/ton-utilisateur/booki"
+            }
         ]
       },  {
         "id": 8,
@@ -153,7 +284,27 @@
           { "validate": "1. Afficher les données du back end sur l'interface via des appels API.", "icon": "circle-check" },
           { "validate": "2. Configurer des routes API pour la communication client / serveur.", "icon": "circle-check" },
           { "validate": "3. Implémenter des données avec Redux pour assurer le fonctionnement du Frontend.", "icon": "circle-check" }
-        ]
+        ],
+          "textCover": [
+    {
+        "title": "Argent Bank"
+    },
+    {
+        "p": "Vous venez d’intégrer Argent Bank comme développeur front-end."
+    },
+    {
+        "p": "Argent Bank est une nouvelle banque en ligne qui souhaite percer dans le secteur bancaire."
+    },
+    {
+        "p": "Vous mettrez en place le tableau de bord des utilisateurs."
+    },
+    {
+        "IconSocial": "icon-social"
+    },
+    {
+        "githubLink": "https://github.com/Gwifsy/ArgenBank-website-main"
+    }
+]
       }
   ]
   

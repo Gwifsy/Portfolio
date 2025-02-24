@@ -4,9 +4,11 @@ import Home from './Pages/Home';
 import About from './Pages/About';
 import Contact from './Pages/Contact';
 import ProjectDetail from './Pages/ProjectDetail';
+import ScrollHandler from './Components/ComponentProject/ScrollHandler';
 function PathRoute() {
     return (
         <BrowserRouter>
+            <ScrollHandler />
             <Routes>
                 <Route path='/' element={<Home />} />
                 <Route path='/about' element={<About />} />
